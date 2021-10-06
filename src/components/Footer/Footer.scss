@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 64px);
+  background-color: #F2F2F2;
+  padding: 0 32px;
+  height: 96px;
+
+  .footer__button-help {
+    text-transform: uppercase;
+    background: #F7FAFF;
+    border: none;
+    border-radius: 6px;
+    height: 100%;
+    max-height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 112%;
+    text-transform: uppercase;
+    color: #6699FD;
+    padding: 15px 21px;
+    cursor: pointer;
+  }
+}

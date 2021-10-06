@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 142px;
+
+  .logo__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2B3452;
+    margin-right: 8px;
+  }
+
+  .logo__label {
+    background: #6699FD;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 3px 4px;
+    text-transform: uppercase;
+  }
+}
