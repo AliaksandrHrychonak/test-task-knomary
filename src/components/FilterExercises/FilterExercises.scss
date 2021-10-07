@@ -1,0 +1,25 @@
+.filter {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 24px;
+
+  .filter__list-item {
+    margin-right: 13px;
+    border-radius: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.filter__button {
+  border: none;
+  border-radius: 40px;
+  padding: 8px 16px;
+}
+
+.filter__button_type_active {
+  background-color: #6699FD;
+}
