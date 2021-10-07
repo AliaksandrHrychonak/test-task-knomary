@@ -26,13 +26,11 @@ export const Exercises = (props) => {
       }
       FilterChange();
     }, [filter, props.isEducation])
-
-
   return (
     <section className="exercises">
       <h1 className="exercise__title">{props.title}</h1>
       <FilterExercises setFilter={setFilter} filterNavButton={filterNavButton} />
-      <CardsExercises data={filterContent}/>
+      <CardsExercises data={filterContent} />
     </section>
   );
 }
