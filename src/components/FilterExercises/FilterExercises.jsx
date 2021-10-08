@@ -12,8 +12,6 @@ export const FilterExercises = ({ setFilter, filterNavButton}) => {
     setCliked(index);
   };
 
-  
-
   return (
     <ul className="filter">
       {
@@ -27,7 +25,7 @@ export const FilterExercises = ({ setFilter, filterNavButton}) => {
             handleChangeFilterButton(evt);
             handleClickFilter(index);
           }}
-          >{item.name}{item.length}</button>
+          >{item.name} <span className="filter__button-count">{item.length}</span> </button>
         </li>
       ))}
     </ul>

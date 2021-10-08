@@ -1,6 +1,6 @@
 import React from "react";
 import { CurrentUserContext } from "../../context/CurrentUserContext";
-import { Route, Redirect, Switch, useHistory } from "react-router-dom";
+import { Route, Switch} from "react-router-dom";
 import { ProtectedRoute } from "../ProtectedRoute/ProtectedRoute";
 import { Main } from "../Main/Main";
 import { Header } from "../Header/Header";
@@ -15,7 +15,6 @@ const App = () => {
   React.useEffect(() => {
     api.getCourse()
     .then((data) =>  {
-      // console.log(data);
       setIsEducation(data)
     })
     .catch((err) => {
@@ -23,7 +22,6 @@ const App = () => {
     })
     api.getNews()
     .then((data) => {
-      // console.log(data);
       setIsNews(data)
     })
     .catch((err) => {

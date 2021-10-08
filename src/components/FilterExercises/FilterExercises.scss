@@ -18,6 +18,15 @@
   border: none;
   border-radius: 40px;
   padding: 8px 16px;
+
+  .filter__button-count {
+    width: 11px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: #FDF41F;
+    padding: 0 3px;
+    margin-left: 8px;
+  }
 }
 
 .filter__button_type_active {
