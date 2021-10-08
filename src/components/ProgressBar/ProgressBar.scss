@@ -1,0 +1,29 @@
+.card__progress {
+  display: flex;
+  flex-direction: column;
+
+  .card__progress-box {
+    width: 100%;
+    margin: 0 0 16px;
+    height: 4px;
+    background-color: #DBDEE5;
+    border-radius: 10px;
+    z-index: 1;
+    
+    .card__progress_range {
+      float: left;
+      height: 100%;
+      background-color: #6FCF97;
+      border-radius: 10px;
+      z-index: 2;
+    }
+    
+  }
+}
+
+.card__progress-box_type_hidden {
+  display: none;
+}
+.card__progress-box_type_active {
+  display: block;
+}

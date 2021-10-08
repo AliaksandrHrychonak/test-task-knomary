@@ -1,6 +1,6 @@
 import React from "react";
 import "./FilterExercises.scss";
-export const FilterExercises = ({ setFilter, filterNavButton }) => {
+export const FilterExercises = ({ setFilter, filterNavButton}) => {
   const [cliked, setCliked] = React.useState(0);
   
   const handleChangeFilterButton = (evt) => {
@@ -12,20 +12,22 @@ export const FilterExercises = ({ setFilter, filterNavButton }) => {
     setCliked(index);
   };
 
+  
+
   return (
     <ul className="filter">
       {
       filterNavButton.map((item, index) => (
-        <li key={item} className="filter__list-item">
+        <li key={item.type} className="filter__list-item">
           <button
-          className={ (cliked === index && "filter__button filter__button_type_active") || "filter__button"}
+          className={(cliked === index && "filter__button filter__button_type_active") || "filter__button"}
           type="button"
-          name={item}
+          name={item.type}
           onClick={(evt) => {
             handleChangeFilterButton(evt);
             handleClickFilter(index);
           }}
-          >{item} <span>8</span></button>
+          >{item.name}{item.length}</button>
         </li>
       ))}
     </ul>

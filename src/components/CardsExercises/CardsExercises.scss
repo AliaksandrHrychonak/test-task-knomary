@@ -23,8 +23,10 @@
 
   }
 
-  .card__title {
-    margin-top: 16px;
+  .card__progress-name {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
   }
 }
 
@@ -38,8 +40,6 @@
   border-left: 1px solid #E9EBF0;
   border-right: 1px solid #E9EBF0;
   border-bottom: 1px solid #E9EBF0;
-
-
   .card__title {
     font-weight: 600;
     font-size: 18px;
@@ -48,36 +48,24 @@
   }
 }
 
-.card__progress {
-  display: flex;
-  flex-direction: column;
-
-  .card__progress-box {
-    width: 100%;
-    margin-top: 8px;
-    display: block;
-    height: 4px;
-    background-color: #DBDEE5;
-    border-radius: 10px;
-    z-index: 1;
-
-    .card__progress_range {
-      float: left;
-      height: 100%;
-      background-color: #6FCF97;
-      border-radius: 10px;
-      z-index: 2;
-    }
-  }
+.card__progress-value {
+  
+}
+.card__progress-value_type_active {
+  display: inline-flex;
 }
 
-.card__progress_type_hidden {
+.card__progress-value_type_hidden {
+  display: none;
+}
+
+.card__progress-name_type_hidden {
   display: none;
 }
 
 .card__access {
   display: flex;
-
+  margin: auto 0 0 0;
 
   .card__access-image {
     margin-right: 10px;
@@ -88,6 +76,4 @@
     line-height: 129%;
     color: #7D8395;
   }
-
-
 }
