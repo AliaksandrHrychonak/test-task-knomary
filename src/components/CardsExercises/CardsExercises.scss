@@ -12,20 +12,23 @@
 .card {
   border-radius: 10px;
   height: 364px;
-
+  cursor: pointer;
   .card__image {
     display: block;
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-
   }
 
   .card__progress-name {
     display: inline-flex;
     justify-content: space-between;
     margin-bottom: 8px;
+  }
+
+  &:hover .card__title {
+    color: #6699FD;
   }
 }
 
@@ -44,30 +47,29 @@
     font-size: 18px;
     line-height: 144%;
     color: #2B3452;
+    transition: color 0.4s linear;
   }
-}
-
-.card__progress-value {
-  
 }
 .card__progress-value_type_active {
   display: inline-flex;
 }
-
 .card__progress-value_type_hidden {
   display: none;
 }
-
 .card__progress-name_type_hidden {
   display: none;
 }
 
 .card__access {
   display: flex;
+  align-items: center;
   margin: auto 0 0 0;
 
   .card__access-image {
     margin-right: 10px;
+    width: 12px;
+    height: 13.5px;
+    object-fit: contain;
   }
 
   .card__access-date {

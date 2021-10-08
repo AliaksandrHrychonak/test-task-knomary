@@ -4,7 +4,11 @@
   border-radius: 10px 10px 0 0;
   position: relative;
   z-index: 1;
-
+  cursor: pointer;
+  
+  &:hover .post__info .post__info_title {
+    color: #6699FD;
+  }
   .post__tags {
     position: absolute;
     top: 0;
@@ -42,13 +46,13 @@
     margin-bottom: 16px;
   }
   .post__info {
-
     .post__info_title {
       margin-bottom: 8px;
       font-weight: 600;
       font-size: 18px;
       line-height: 144%;
       color: #2B3452;
+      transition: color 0.4s linear;
     }
     .post__info_description {
       margin-bottom: 18px;
@@ -61,7 +65,7 @@
 
 .post__buttons {
   display: inline-flex;
-  .post__button-like {
+  .post__button {
     width: 20px;
     height: 18.35px;
     margin: 0 10px 0 0;
@@ -72,6 +76,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: color 0.4s linear;
   }
   .post__button-count {
     margin-right: 26px;

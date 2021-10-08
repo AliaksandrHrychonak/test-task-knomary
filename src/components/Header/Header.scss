@@ -1,9 +1,13 @@
 .header {
   display: flex;
-  width: calc(100% - 64px);
-  padding: 0 32px;
+  width: 100%;
+  max-width: calc(1920px - 56px);
+  padding: 0 32px 0 24px;
   height: 64px;
   border-bottom: 1px solid #E9EBF0;
+  position: fixed;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .header__section {

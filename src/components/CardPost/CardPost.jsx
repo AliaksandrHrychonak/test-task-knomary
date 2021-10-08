@@ -18,8 +18,8 @@ export const CardPost = ({item}) => {
         <h4 className="post__info_title">{item.name}</h4>
         <p className="post__info_description">{item.description}</p>
         <div className="post__buttons">
-          <button className="post__button-like" type="button" style={{backgroundImage: `url(${like})` }} /> <span className="post__button-count">{item.likes}</span>
-          <button className="post__button-like" type="comment" style={{backgroundImage: `url(${comment})` }} /><span className="post__button-count">{item.comments}</span>
+          <button className="post__button" type="button" style={{backgroundImage: `url(${like})` }} /> <span className="post__button-count">{item.likes}</span>
+          <button className="post__button" type="comment" style={{backgroundImage: `url(${comment})` }} /><span className="post__button-count">{item.comments}</span>
         </div>
       </div>
       

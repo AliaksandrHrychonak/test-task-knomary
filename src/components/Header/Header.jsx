@@ -10,7 +10,7 @@ export const Header = (props) => {
       <Navigation />
       </div>
       <div className="header__account">
-        <img src={props.userImage} alt={props.userName} className="header__account-image" />
+        <img src={process.env.PUBLIC_URL + props.userImage} alt={props.userName} className="header__account-image" />
         <div className="header__account-info">
           <p className="header__account-title">{props.userName}</p>
           <p className="header__account-status">{props.userStatus}</p>
