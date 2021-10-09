@@ -1,5 +1,5 @@
 .navigation {
-  margin: 0 40px;
+  margin: 0 0 0 40px;
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
@@ -45,5 +45,11 @@
 
     }
     
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navigation {
+    display: none;
   }
 }

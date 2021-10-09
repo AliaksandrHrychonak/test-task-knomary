@@ -3,10 +3,31 @@
   max-width: 1392px;
 
   .exercise__title {
+    width: 100%;
     margin-bottom: 16px;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     color: #2B3452;
   }
+  @media screen and (max-width: 1411px) {
+    .exercise__title {
+      max-width: 1044px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  @media screen and (max-width: 1058px) {
+    .exercise__title {
+      max-width: 686px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  @media screen and (max-width: 704px) {
+    .exercise__title {
+      text-align: center;
+    }
+  }
 }
+

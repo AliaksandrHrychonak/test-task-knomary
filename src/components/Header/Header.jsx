@@ -3,8 +3,10 @@ import "./Header.scss";
 import {Navigation} from "../Navigation/Navigation"
 import { Logo } from '../Logo/Logo';
 export const Header = (props) => {
+
   return (
     <header className="header">
+      <button type="button" className="header__button-menu" ></button>
       <div className="header__section">
       <Logo logoTitle={props.title} logoLabel={props.label}/>
       <Navigation />

@@ -22,4 +22,21 @@
     padding: 15px 21px;
     cursor: pointer;
   }
+
+  
+}
+
+@media screen and (max-width: 421px) {
+  .footer {
+    padding-top: 22px;
+    padding-bottom: 12px;
+    height: min-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .logo {
+      margin-bottom: 20px;
+    }
+  }
 }
