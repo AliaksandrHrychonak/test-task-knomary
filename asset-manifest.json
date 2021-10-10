@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/test-task-knomary/static/css/main.43f85f14.chunk.css",
+    "main.js": "/test-task-knomary/static/js/main.e8ea51c7.chunk.js",
+    "main.js.map": "/test-task-knomary/static/js/main.e8ea51c7.chunk.js.map",
+    "runtime-main.js": "/test-task-knomary/static/js/runtime-main.49de40c8.js",
+    "runtime-main.js.map": "/test-task-knomary/static/js/runtime-main.49de40c8.js.map",
+    "static/js/2.0fe15e30.chunk.js": "/test-task-knomary/static/js/2.0fe15e30.chunk.js",
+    "static/js/2.0fe15e30.chunk.js.map": "/test-task-knomary/static/js/2.0fe15e30.chunk.js.map",
+    "static/js/3.a641b3d5.chunk.js": "/test-task-knomary/static/js/3.a641b3d5.chunk.js",
+    "static/js/3.a641b3d5.chunk.js.map": "/test-task-knomary/static/js/3.a641b3d5.chunk.js.map",
+    "index.html": "/test-task-knomary/index.html",
+    "static/css/main.43f85f14.chunk.css.map": "/test-task-knomary/static/css/main.43f85f14.chunk.css.map",
+    "static/js/2.0fe15e30.chunk.js.LICENSE.txt": "/test-task-knomary/static/js/2.0fe15e30.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/test-task-knomary/static/media/Inter-SemiBoldItalic.d9467ee3.woff2",
+    "static/media/access-course.4276497f.svg": "/test-task-knomary/static/media/access-course.4276497f.svg",
+    "static/media/comment.a06ba2b0.svg": "/test-task-knomary/static/media/comment.a06ba2b0.svg",
+    "static/media/like.29932db2.svg": "/test-task-knomary/static/media/like.29932db2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49de40c8.js",
+    "static/js/2.0fe15e30.chunk.js",
+    "static/css/main.43f85f14.chunk.css",
+    "static/js/main.e8ea51c7.chunk.js"
+  ]
+}
