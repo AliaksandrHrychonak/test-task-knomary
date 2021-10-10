@@ -5,7 +5,8 @@
   flex-wrap: nowrap;
   width: 100%;
   max-width: 142px;
-
+  transition: opacity 0.4s linear;
+  cursor: pointer;
   .logo__title {
     font-weight: bold;
     font-size: 18px;
@@ -23,5 +24,10 @@
     color: #FFFFFF;
     padding: 3px 4px;
     text-transform: uppercase;
+  }
+
+  
+  &:hover {
+    opacity: 0.6;
   }
 }

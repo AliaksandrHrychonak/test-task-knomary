@@ -14,7 +14,7 @@ export const CardsExercises = ({ data }) => {
                 <p className="card__progress-name">
                   {item.type === 'course' ? 'Курс' : '' || item.type === 'event' ? 'Событие' : '' || item.type === 'test' ? 'Тест' : '' }
                   <span className={`card__progress-value ${item.progress !== null ? 'card__progress-value_type_active' : 'card__progress-value_type_hidden'}`}>
-                    {item.progress === 0 ? '' : `${item.progress}% `} 
+                    {item.progress === 0 || item.progress === 100 ? '' : `${item.progress}% `} 
                     {item.progress > 0 ? (item.progress === 100 ? "пройден" : "пройденно") : "не пройденно"}
                   </span>
                 </p>

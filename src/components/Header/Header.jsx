@@ -2,11 +2,12 @@ import React from 'react';
 import "./Header.scss";
 import {Navigation} from "../Navigation/Navigation"
 import { Logo } from '../Logo/Logo';
+import { ButtonBurger } from '../ButtonBurger/ButtonBurger';
 export const Header = (props) => {
 
   return (
     <header className="header">
-      <button type="button" className="header__button-menu" ></button>
+      <ButtonBurger {...props} />
       <div className="header__section">
       <Logo logoTitle={props.title} logoLabel={props.label}/>
       <Navigation />

@@ -7,8 +7,7 @@
   .navigation__list {
     display: flex;
     list-style: none;
-
-
+    
     .navigation__list-item {
       height: 100%;
       display: flex;
@@ -37,14 +36,11 @@
           opacity: 0.6;
         }
       }
-
       .navigation__link_type_active {
         color: #6699FD;
         border-bottom: 1px solid #6699FD;
       }
-
     }
-    
   }
 }
 

@@ -1,0 +1,46 @@
+.header__button-menu {
+  display: none;
+  width: 26px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+
+  & span {
+    position: absolute;
+    top: 8px;
+    width: 80%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 2px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 2px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    background-color: #000;
+    height: 2px;
+    border-radius: 2px;
+  }
+
+  &_hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header__button-menu {
+    display: block;
+  }
+}

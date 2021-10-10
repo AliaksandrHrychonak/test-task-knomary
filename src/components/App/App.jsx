@@ -6,13 +6,21 @@ import { Main } from "../Main/Main";
 import { Header } from "../Header/Header";
 import { Footer } from "../Footer/Footer";
 import { api } from "../../utils/api";
+import { MobileMenu } from "../MobileMenu/MobileMenu";
 
 const App = () => {
   const [currentUser, setCurrentUser] = React.useState({});
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   const [isEducation, setIsEducation] = React.useState([]);
   const [isNews, setIsNews] = React.useState([]);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   const history = useHistory();
+
+  const handleOpenMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+    console.log('toggle');
+  }
+
   React.useEffect(() => {
     api
       .getUserInfo()
@@ -51,6 +59,8 @@ const App = () => {
           userName={currentUser.name}
           userStatus={currentUser.status}
           userImage={currentUser.image}
+          isActive={isMenuOpen}
+          onOpenClick={handleOpenMenu}
         />
         <Switch>
           <ProtectedRoute
@@ -64,6 +74,7 @@ const App = () => {
           
         </Switch>
         <Footer title="Knomary" label="test" buttonHelpText="нужна помощь?" />
+        <MobileMenu isActive={isMenuOpen} onOpenClick={handleOpenMenu}/>
       </div>
     </CurrentUserContext.Provider>
   );

@@ -8,13 +8,15 @@
   position: fixed;
   background-color: #fff;
   z-index: 10;
+  align-items: center;
+  
   .header__section {
     display: flex;
     height: 100%;
   }
 
-  
 }
+
 .header__account {
   display: flex;
   align-items: center;
@@ -29,6 +31,7 @@
     height: 40px;
     border-radius: 8px;
     object-fit: cover;
+    cursor: pointer;
   }
 
   .header__account-info {
@@ -36,6 +39,8 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 8px;
+    cursor: pointer;
+
     .header__account-title {
       font-weight: 500;
       font-size: 14px;
@@ -43,6 +48,7 @@
       color: #000000;
       white-space: nowrap;
     }
+
     .header__account-status {
       font-size: 12px;
       line-height: 150%;
@@ -51,6 +57,16 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header__account {
+    position: static;
+    transform: initial;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .header {
@@ -58,23 +74,21 @@
     justify-content: space-around;
     width: calc(100% - 20px);
     max-width: calc(100% - 20px);
+
     .logo {
       max-width: min-content;
+
       .logo__title {
         font-size: 16px;
       }
-      .logo__label{
+
+      .logo__label {
         font-size: 16px;
       }
     }
 
-    .header__account{
-      position: static;
-      transform: initial;
-
-      .header__account-info {
-        display: none;
-      }
+    .header__account-info {
+      display: none;
     }
   }
 }
