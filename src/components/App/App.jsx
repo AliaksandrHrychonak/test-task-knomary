@@ -18,7 +18,6 @@ const App = () => {
 
   const handleOpenMenu = () => {
     setIsMenuOpen(!isMenuOpen)
-    console.log('toggle');
   }
 
   React.useEffect(() => {
